@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Result{% endblock %}
+
+{% block content %}
+    <h2>Your bill breakdown</h2>
+    <table>
+        <tr>
+            <td>Bill Amount</td><td>:</td><td>${{ bill_amount }}</td>
+        </tr>
+        <tr>
+            <td>Tip Percentage</td><td>:</td><td>${{ tip_percentage }}</td>
+        </tr>
+        <tr>
+            <td>Tip Amount</td><td>:</td><td>${{ tip_amount }}</td>
+        </tr>
+        <tr>
+            <td>Total Bill</td><td>:</td><td>${{ total_bill }}</td>
+        </tr>
+    </table>
+    <a href="{% url 'tipCalc:calculate_tip' %}">Go Back</a>
+{% endblock %}
