@@ -18,7 +18,7 @@ make run
 # Code
 [django code](https://github.com/VenkataSaiRahulSunkari/IS601101-A4/tree/main/tipCalc)
 
-# Results
+# Output
 ## Form
 ![Form](is601101-a4-form.png)
 
